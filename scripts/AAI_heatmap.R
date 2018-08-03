@@ -1,0 +1,6 @@
+require(gplots)
+aai <- read.delim("OAU_out_forR.txt", row.names=1)
+View(aai)
+x <- as.matrix(aai)
+#heatmap.2(x, keysize=1.5, key.xlab="AAI", key.title = "", col=colorRampPalette(c("beige", "cadetblue", "darkblue")), trace="none", margins = c(10, 10), cexRow = 0.1, cexCol = 0.1)
+heatmap.2(x, keysize=1.5, key.xlab="AAI", key.title = "", col=colorRampPalette(c("beige", "cadetblue", "darkblue")), trace="none", margins = c(20, 30), cexRow = 0.7, cexCol = 0.7, adjRow =c(NA,0.5), adjCol=c(NA,0.5))
