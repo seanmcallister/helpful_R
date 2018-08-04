@@ -8,7 +8,7 @@ file <- commandArgs(trailingOnly=TRUE)
 numeric_read_length <- as.numeric(file[2])
 
 #load raw data
-#setwd("/Users/sean/Sean\'s\ Folder/UDel\ Folder/Research/3Metatranscriptome_Run2/bed_multicov/regardless")
+#setwd("/home/mcallis")
 #raw_reads <- read.delim("S1all_vs_S1_C6_bed_multicov.txt", header=FALSE, quote="")
 raw_reads <- read.delim(file[1], header=FALSE, quote="")
 

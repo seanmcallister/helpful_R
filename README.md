@@ -2,8 +2,9 @@ Programs for manipulation of files in R or RStudio:
 
 1. AAI\_heatmap.R
 2. ANI\_heatmap.R
-3. TPM\_byTreatment\_figures.R
-4. biplot\_sodabay.R
+3. 16S\_heatmap.R
+4. TPM\_byTreatment\_figures.R
+5. biplot\_sodabay.R
 
 
 Programs which accept command line pipes or positional arguments:

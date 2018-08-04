@@ -12,7 +12,7 @@ library(plyr)
 #3 = PDF height in inches
 #file <- commandArgs(trailingOnly=TRUE)
 
-setwd("/Users/sean/Sean\'s\ Folder/UDel\ Folder/Research/3Metatranscriptome_Run2/07_identify_genes_of_interest/headers_of_interest/00_TPM_DATA/TPM_by_genometreatment")
+setwd("/home/mcallis/00_TPM_DATA/TPM_by_genometreatment")
 blastgene <- read.delim("allin_Rconverted_TPM.txt", header = TRUE, na.strings = "")
 blastgene$zero <- ifelse(blastgene$value == 0, "red", "black")
 
@@ -29,7 +29,7 @@ filtered_ongenomes <- subset(filtered_onquery, variable %in% genome_headers)
 #Add column for log normalized
 #blastgene$lognorm <- log(blastgene$value)
 
-pdf("27_MixedFerm_Main_TREEORDER_RPLOT.pdf", width = 100, height = 40)
+pdf("RPLOT.pdf", width = 100, height = 40)
 ggplot() +
   geom_point(data=filtered_ongenomes, na.rm = TRUE, aes(x=factor(variable, levels = genome_headers), y=factor(query, levels = rev(query_headers)), size=ifelse(value==0, value, value), color = zero)) + 
   scale_color_manual(values=c("#000000", "#ff0000", "#cccccc")) +

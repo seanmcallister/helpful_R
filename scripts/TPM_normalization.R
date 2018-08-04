@@ -18,7 +18,7 @@ library(stringr)
 file <- commandArgs(trailingOnly=TRUE)
 
 #load raw data
-#setwd("/Users/sean/Sean's Folder/UDel Folder/Research/3Metatranscriptome_Run2/06_TPM/01_tpm_conversions/MT_paried_MG/regardless")
+#setwd("/home/mcallis/01_tpm_conversions/MT_paried_MG/regardless")
 #raw_reads <- read.delim("665MMA12all_vs_665_MMA12.TPM", header=FALSE, quote="")
 #constitutive_TPM <- read.delim("../../../../07_identify_genes_of_interest/constitutive_genes/constitutive_genes_pulled_from_TPM/665MMA12all_vs_665_MMA12.TPM.constitutivegenes", header=FALSE, quote="", na.strings="")
 raw_reads <- read.delim(file[1], header=FALSE, quote="")
